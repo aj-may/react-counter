@@ -1,0 +1,73 @@
+{
+  "name": "@aj7may/react-counter",
+  "version": "0.0.0-semantically-released",
+  "description": "This is an example of a typescript package with CI, build, publish, etc.",
+  "module": "./dist/index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist/**",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./next": {
+      "import": "./dist/next/index.js",
+      "require": "./dist/next/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aj-may/react-counter.git"
+  },
+  "keywords": [
+    "counter",
+    "react",
+    "package",
+    "example",
+    "module",
+    "typescript"
+  ],
+  "author": "AJ May <aj@randombits.studio>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aj-may/react-counter/issues"
+  },
+  "homepage": "https://github.com/aj-may/react-counter#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/react": "^18.0.26",
+    "next": "^13.0.6",
+    "semantic-release": "^19.0.5",
+    "tsup": "^6.5.0"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^4.19.0",
+    "axios": "^1.2.0"
+  },
+  "peerDependencies": {
+    "express": "^4.18.2",
+    "next": "^13.0.6",
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    },
+    "express": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
