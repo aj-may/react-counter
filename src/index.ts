@@ -1,3 +1,3 @@
-export { CounterProvider } from "./counterProvider"
-export { useCounter } from "./useCounter"
-export { Counter } from "./counter"
+export { CounterProvider } from "./counterProvider.js"
+export { useCounter } from "./useCounter.js"
+export { Counter } from "./counter.js"

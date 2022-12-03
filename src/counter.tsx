@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useCounter } from "./useCounter"
+import { useCounter } from "./useCounter.js"
 
 export const Counter = () => {
   const { count, isLoading, increment } = useCounter();
