@@ -6,10 +6,5 @@
     "target": "ES2020",
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
-    "paths": {
-      "@aj7may/react-counter": ["./src/index.ts"],
-      "@aj7may/react-counter/next": ["./src/next/index.ts"],
-      "@aj7may/react-counter/express": ["./src/express/index.ts"],
-    },
   }
 }
